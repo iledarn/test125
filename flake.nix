@@ -2,7 +2,7 @@
   description = "Odoo v12.0 nix-od environment";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/release-21.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/release-21.05";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
