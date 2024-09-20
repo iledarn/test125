@@ -22,14 +22,24 @@
       dateutil
       psycopg2
       (numpy.overridePythonAttrs (oldAttrs: rec {
-        version = "1.19.5";
+        version = "1.19.5";  # This version should be compatible with Pillow 4.0.0
         src = pkgs.fetchPypi {
           pname = "numpy";
           inherit version;
-          sha256 = "0fdbaa32c9eb09ef09d425dc154628fca6fa69d2f7c1a33f889abb7e0efb3909";
+          sha256 = "e5cf3fdf13401885e8eea8170624ec96225e2174eb0c611c6f26dd33b489e3ff";
         };
       }))
-      pillow
+      (pillow.overridePythonAttrs (oldAttrs: rec {
+        version = "4.0.0";
+        src = pkgs.fetchPypi {
+          pname = "Pillow";
+          inherit version;
+          sha256 = "ee26d2d7e7e300f76ba7b796014c04011394d0c4a5ed9a288264a3e443abca50";
+        };
+        propagatedBuildInputs = (oldAttrs.propagatedBuildInputs or []) ++ [
+          pkgs.python36Packages.olefile
+        ];
+      }))
     ]);
 
     myEnv = pkgs.buildEnv {
