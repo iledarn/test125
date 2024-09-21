@@ -1,2 +1,7 @@
 versions.csv
 .ssh/
+auto/
+auto_repos.yaml
+odoo-enterprise/
+odoo/
+private
