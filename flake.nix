@@ -58,6 +58,7 @@
       google-auth-oauthlib
       google-api-python-client
       beautifulsoup4
+      jira
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
