@@ -59,6 +59,7 @@
       google-api-python-client
       beautifulsoup4
       jira
+      numpy
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
