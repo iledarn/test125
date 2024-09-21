@@ -12,7 +12,7 @@
   let
     pkgs = nixpkgs.legacyPackages.${system};
 
-    gitaggregator = pkgs.python310Packages.buildPythonPackage rec {
+    gitaggregator = pkgs.python37Packages.buildPythonPackage rec {
       pname = "git-aggregator";
       version = "4.0.1";
       format = "wheel";  # Specify that this is a wheel
@@ -23,7 +23,7 @@
       };
 
       doCheck = false;  # Skip tests if they're causing issues
-      propagatedBuildInputs = with pkgs.python310Packages; [
+      propagatedBuildInputs = with pkgs.python37Packages; [
         pyyaml
         argcomplete
         colorama

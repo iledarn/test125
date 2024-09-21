@@ -1,0 +1,6 @@
+---
+ENV:
+  DEFAULT_REPO_PATTERN: git@github.com:baracodadailyhealthtech/{}.git
+  ODOO_VERSION: 12.0
+odoo-enterprise:
+  - "*"
