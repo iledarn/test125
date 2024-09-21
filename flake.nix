@@ -50,6 +50,7 @@
       html2text
       docutils
       num2words
+      xlrd
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
