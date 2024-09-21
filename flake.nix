@@ -55,6 +55,7 @@
       XlsxWriter
       markdown
       google-auth
+      google-auth-oauthlib
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
