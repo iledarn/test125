@@ -55,7 +55,7 @@
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
 
     myEnv = pkgs.buildEnv {
-      name = "my-python-env-3-6";
+      name = "my-python-env-3-7";
       paths = with pkgs; [
         pythonEnv
         postgresql_13
