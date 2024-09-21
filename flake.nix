@@ -70,6 +70,7 @@
       name = "my-python-env-3-7";
       paths = with pkgs; [
         pythonEnv
+        sassc
         postgresql_13
         wkhtmltopdf
       ];
