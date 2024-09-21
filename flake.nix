@@ -54,6 +54,7 @@
       cachetools
       XlsxWriter
       markdown
+      google-auth
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
