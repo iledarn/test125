@@ -53,6 +53,7 @@
       xlrd
       cachetools
       XlsxWriter
+      markdown
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
