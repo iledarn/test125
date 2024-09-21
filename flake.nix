@@ -60,6 +60,7 @@
       beautifulsoup4
       jira
       numpy
+      xlwt
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
