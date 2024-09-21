@@ -56,6 +56,7 @@
       markdown
       google-auth
       google-auth-oauthlib
+      google-api-python-client
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
