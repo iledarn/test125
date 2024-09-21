@@ -51,6 +51,7 @@
       docutils
       num2words
       xlrd
+      cachetools
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
