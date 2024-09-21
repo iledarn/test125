@@ -9,6 +9,8 @@
    python autoaggregate.py
 
    gitaggregate -c auto_repos.yaml
+   # this won't work - because we need to specify the deployment key for each repo, so the workaround is:
+   GIT_SSH_COMMAND='ssh -i ~/.ssh/odoo-enterprise' git clone git@github.com:baracodadailyhealthtech/odoo-enterprise.git
 
    cd ~
 
