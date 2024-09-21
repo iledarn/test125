@@ -52,6 +52,7 @@
       num2words
       xlrd
       cachetools
+      XlsxWriter
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
