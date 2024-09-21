@@ -61,6 +61,7 @@
       jira
       numpy
       xlwt
+      phonenumbers
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
