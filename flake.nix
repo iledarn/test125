@@ -62,6 +62,7 @@
       numpy
       xlwt
       phonenumbers
+      gevent
     ]);
 
     wkhtmltopdf = wkhtmltopdf-flake.packages.${system}.default;
